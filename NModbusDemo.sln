@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NModbusDemo", "NModbusDemo\NModbusDemo.csproj", "{0F2C61E7-8D50-492D-BA5C-4919570F1D94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NModbusTcpSlave", "NModbusTcpSlave\NModbusTcpSlave.csproj", "{47316253-A99C-48B7-BEF9-EB21DDC7C4FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NModbusTcpMaster", "NModbusTcpMaster\NModbusTcpMaster.csproj", "{4BA0703F-A619-4672-8FA7-DBE24E06C81D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.WFPClient", "Modbus.WFPClient\Modbus.WFPClient.csproj", "{740D0F0C-14CF-4728-8E61-627CCCCFEA73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Services", "Modbus.Services\Modbus.Services.csproj", "{67215306-7349-47F8-B388-71DBE92BBB55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Models", "Modbus.Models\Modbus.Models.csproj", "{2C0C9D5E-3E3A-4D9C-8BEC-DFB77292C467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F2C61E7-8D50-492D-BA5C-4919570F1D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2C61E7-8D50-492D-BA5C-4919570F1D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2C61E7-8D50-492D-BA5C-4919570F1D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2C61E7-8D50-492D-BA5C-4919570F1D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47316253-A99C-48B7-BEF9-EB21DDC7C4FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47316253-A99C-48B7-BEF9-EB21DDC7C4FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47316253-A99C-48B7-BEF9-EB21DDC7C4FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47316253-A99C-48B7-BEF9-EB21DDC7C4FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA0703F-A619-4672-8FA7-DBE24E06C81D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA0703F-A619-4672-8FA7-DBE24E06C81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA0703F-A619-4672-8FA7-DBE24E06C81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA0703F-A619-4672-8FA7-DBE24E06C81D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740D0F0C-14CF-4728-8E61-627CCCCFEA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740D0F0C-14CF-4728-8E61-627CCCCFEA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740D0F0C-14CF-4728-8E61-627CCCCFEA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740D0F0C-14CF-4728-8E61-627CCCCFEA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67215306-7349-47F8-B388-71DBE92BBB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67215306-7349-47F8-B388-71DBE92BBB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67215306-7349-47F8-B388-71DBE92BBB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67215306-7349-47F8-B388-71DBE92BBB55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0C9D5E-3E3A-4D9C-8BEC-DFB77292C467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0C9D5E-3E3A-4D9C-8BEC-DFB77292C467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0C9D5E-3E3A-4D9C-8BEC-DFB77292C467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0C9D5E-3E3A-4D9C-8BEC-DFB77292C467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
