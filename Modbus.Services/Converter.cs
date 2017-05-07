@@ -22,5 +22,14 @@ namespace Modbus.Services
 
             return result;
         }
+
+        public static int[] ConvertToInt(float value)
+        {
+            byte[] bytes = BitConverter.GetBytes(value);
+
+            int[] result = new int[] { BitConverter.ToInt16(bytes, 0), BitConverter.ToInt16(bytes, 2) };
+
+            return result;
+        }
     }
 }
