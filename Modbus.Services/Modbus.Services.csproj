@@ -43,12 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseService.cs" />
     <Compile Include="BinaryService.cs" />
     <Compile Include="Converter.cs" />
-    <Compile Include="IAnalogService.cs" />
+    <Compile Include="IAnalogInputService.cs" />
+    <Compile Include="IAnalogOutputService.cs" />
     <Compile Include="IBinaryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TempService.cs" />
+    <Compile Include="TemperatureService.cs" />
+    <Compile Include="VoltageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

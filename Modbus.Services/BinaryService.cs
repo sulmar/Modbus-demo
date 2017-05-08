@@ -10,17 +10,11 @@ using System.Net.Sockets;
 
 namespace Modbus.Services
 {
-    public class BinaryService : IBinaryService
+    public class BinaryService : BaseService, IBinaryService
     {
-        private readonly string hostname;
-        private readonly int port;
-        private readonly byte slaveId;
-
         public BinaryService(string hostname, int port, byte slaveId)
+            : base(hostname, port, slaveId)
         {
-            this.hostname = hostname;
-            this.port = port;
-            this.slaveId = slaveId;
         }
 
         public Vector Get()
@@ -78,7 +72,6 @@ namespace Modbus.Services
             Trace.WriteLine($"Connecting to {hostname}:{port}");
 
             ushort startAddress = 2200;
-            ushort numRegisters = 8;
 
             var inputs = new bool[] { value.B0, value.B1, value.B2, value.B3 };
 
@@ -96,7 +89,6 @@ namespace Modbus.Services
             Trace.WriteLine($"Connecting to {hostname}:{port}");
 
             ushort startAddress = 2200;
-            ushort numRegisters = 8;
 
             var inputs = new bool[] { value.B0, value.B1, value.B2, value.B3 };
 
