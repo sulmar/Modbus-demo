@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace Modbus.Services
 {
-    public interface IAnalogService
+    public interface IAnalogOutputService
     {
-        float Get();
-
-        Task<float> GetAsync();
-
         void Set(float value);
 
         Task SetAsync(float value);
-
     }
 }

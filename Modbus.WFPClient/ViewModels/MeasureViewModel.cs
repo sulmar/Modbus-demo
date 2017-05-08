@@ -10,7 +10,7 @@ namespace Modbus.WFPClient.ViewModels
 {
     public class MeasureViewModel : BaseViewModel
     {
-        private readonly IAnalogService AnalogService;
+        private readonly IAnalogInputService AnalogInputService;
 
         #region Measure
 
@@ -34,7 +34,7 @@ namespace Modbus.WFPClient.ViewModels
             var port = int.Parse(ConfigurationManager.AppSettings["TcpPort"]);
             byte slaveId = 1;
 
-            this.AnalogService = new TempService(hostname, port, slaveId);
+            this.AnalogInputService = new TemperatureService(hostname, port, slaveId);
 
             System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
             dispatcherTimer.Tick += dispatcherTimer_Tick;
@@ -47,19 +47,19 @@ namespace Modbus.WFPClient.ViewModels
             Task.Run(()=>GetAsync());
         }
 
-        public MeasureViewModel(IAnalogService analogService)
+        public MeasureViewModel(IAnalogInputService analogInputService)
         {
-            this.AnalogService = analogService;
+            this.AnalogInputService = analogInputService;
         }
 
         public void Get()
         {
-            Measure = AnalogService.Get();
+            Measure = AnalogInputService.Get();
         }
 
         public async Task GetAsync()
         {
-            Measure = await AnalogService.GetAsync();
+            Measure = await AnalogInputService.GetAsync();
         }
 
     }
