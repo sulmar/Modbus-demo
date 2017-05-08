@@ -67,5 +67,15 @@ namespace Modbus.Services
                 return result;
             }
         }
+
+        public void Set(float value)
+        {
+            throw new NotSupportedException();
+        }
+
+        public Task SetAsync(float value)
+        {
+            throw new NotSupportedException();
+        }
     }
 }

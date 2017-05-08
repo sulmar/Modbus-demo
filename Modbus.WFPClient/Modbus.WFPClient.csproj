@@ -62,11 +62,15 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\BinaryViewModel.cs" />
     <Compile Include="ViewModels\MeasureViewModel.cs" />
+    <Compile Include="ViewModels\VoltageViewModel.cs" />
     <Compile Include="Views\BinaryView.xaml.cs">
       <DependentUpon>BinaryView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MeasureView.xaml.cs">
       <DependentUpon>MeasureView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VoltageView.xaml.cs">
+      <DependentUpon>VoltageView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +118,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MeasureView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VoltageView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

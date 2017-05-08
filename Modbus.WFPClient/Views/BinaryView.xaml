@@ -23,7 +23,7 @@
             <CheckBox Content="B3" IsChecked="{Binding Vector.B3, UpdateSourceTrigger=PropertyChanged}" />
         </StackPanel>
 
-        <Button Click="Button_Click">Send</Button>
+        <Button Click="Button_Click">Set</Button>
 
         </StackPanel>
     </Grid>

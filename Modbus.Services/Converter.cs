@@ -27,7 +27,7 @@ namespace Modbus.Services
         {
             byte[] bytes = BitConverter.GetBytes(value);
 
-            int[] result = new int[] { BitConverter.ToInt16(bytes, 0), BitConverter.ToInt16(bytes, 2) };
+            int[] result = new int[2] { BitConverter.ToInt16(bytes, 0), BitConverter.ToInt16(bytes, 2) };
 
             return result;
         }

@@ -11,5 +11,10 @@ namespace Modbus.Services
         float Get();
 
         Task<float> GetAsync();
+
+        void Set(float value);
+
+        Task SetAsync(float value);
+
     }
 }
