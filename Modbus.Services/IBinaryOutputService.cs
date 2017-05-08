@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Modbus.Services
 {
-    public interface IBinaryService : IBinaryInputService, IBinaryOutputService
+    public interface IBinaryOutputService
     {
+        void Set(Vector value);
 
+        Task SetAsync(Vector value);
     }
-
-   
 }
