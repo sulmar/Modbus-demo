@@ -23,11 +23,11 @@ namespace Modbus.Services
             return result;
         }
 
-        public static int[] ConvertToInt(float value)
+        public static ushort[] ConvertToUshort(float value)
         {
             byte[] bytes = BitConverter.GetBytes(value);
 
-            int[] result = new int[2] { BitConverter.ToInt16(bytes, 0), BitConverter.ToInt16(bytes, 2) };
+            ushort[] result = new ushort[2] { BitConverter.ToUInt16(bytes, 0), BitConverter.ToUInt16(bytes, 2) };
 
             return result;
         }
